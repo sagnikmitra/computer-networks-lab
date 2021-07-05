@@ -15,12 +15,16 @@ Computer Networks Lab Assignment
 #include <arpa/inet.h>
 #include <errno.h>
 #define PORT 4455
+
+//If the Program Shows any error, then it will show the output by using the errno variable
 extern int errno;
 
 int main()
 {
+    //Jekono
     int id;
     struct sockaddr_in ser;
+    //
     id = socket(AF_INET, SOCK_STREAM, 0);
 
     puts(strerror(errno));
