@@ -15,6 +15,10 @@
 #define FALSE 0
 #define PORT 8888
 
+/*
+eta bascially serve thteke client ke message korar jnno
+*/
+
 int main(int argc, char *argv[])
 {
     int opt = TRUE;

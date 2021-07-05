@@ -10,6 +10,13 @@
 #include <pthread.h>
 
 int server_fd;
+/*
+Server_fd hcche server er identity of socket.
+Ebar receive fucntion ta hcche messag receive korar jnno
+send fucntion ta hcche msg send koarr jnno
+both send and receive fucntion alda thread e cholbe jte taderke parrallely use kora jay
+port ta alada karon nijekei nije mesasge korar kono mane hyna, tai ektate 1234 arektate 1235
+ */
 
 void *receive(void *arg)
 {
