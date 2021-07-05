@@ -23,7 +23,9 @@ int main()
 {
     //Jekono
     int id;
+    //The sockaddr_in structure describe an Internet Socket Address
     struct sockaddr_in ser;
+
     //
     id = socket(AF_INET, SOCK_STREAM, 0);
 
