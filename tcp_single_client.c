@@ -20,16 +20,7 @@ int main()
 {
 	int id;
 	struct sockaddr_in ser;
-
-	//OPEN A SOCKET
 	id = socket(AF_INET, SOCK_STREAM, 0);
-	/*if(id<0)
-	{
-		printf("Socket Creation Failed");
-		exit(0);
-	}
-	else
-		printf("Socket Creation Successful\n");*/
 
 	puts(strerror(errno));
 
