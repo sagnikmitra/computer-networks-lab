@@ -26,7 +26,7 @@ void hammingDist(char str1[], char str2[])
             count++;
         i++;
     }
-    printf("%d", count);
+    printf("%d\n", count);
 }
 
 int main()
