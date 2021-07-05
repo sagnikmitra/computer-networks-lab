@@ -14,6 +14,9 @@
 #define TRUE 1
 #define FALSE 0
 #define PORT 8888
+/*
+Ekahen basically ekta server message ptahcche onekgulto client wait korche
+ */
 
 int main(int argc, char *argv[])
 {

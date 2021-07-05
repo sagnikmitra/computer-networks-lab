@@ -1,4 +1,4 @@
-
+//Netinet is used
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <unistd.h>
@@ -12,12 +12,18 @@
 
 int server_fd;
 
+/*
+Server_fd hcche server er identity of socket.
+Ebar receive fucntion ta hcche messag receive korar jnno
+send fucntion ta hcche msg send koarr jnno
+both send and receive fucntion alda thread e cholbe jte taderke parrallely use kora jay
+ */
+
 void *receive(void *arg)
 {
 
 	while (1)
 	{
-
 		struct sockaddr_in address1;
 		char buffer[1024] = {0};
 		int length = sizeof(address1);
